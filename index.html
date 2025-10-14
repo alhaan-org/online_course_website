@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <script src="app.js"></script>
     <title>Online Course Website</title>
   </head>
 
@@ -23,6 +24,7 @@
         </div>
         <nav class="flex flex-row p-5 items-center justify-between w-full">
           <h1 class="text-5xl">LOGO</h1>
+          <button class="menu-btn flex rounded-md p-5 text-black text-5xl"><i class="bi bi-x"></i></button>
           <ul class="nav-ul">
             <li class="nav-links"><a href="#">Home</a></li>
             <li class="nav-links"><a href="#">About Us</a></li>
@@ -31,11 +33,22 @@
             <li class="nav-links"><a href="#">Blogs</a></li>
             <li class="nav-links"><a href="#">Contact Us</a></li>
           </ul>
-          <div>
+          <div class="text-2xl text-black login-btn">
             <a href="#"><i class="bi bi-person-fill"></i> Login</a>
           </div>
         </nav>
       </div>
+      <div class="dropdown-menu toggled">
+             <ul class="dropdown-list">
+              <li class="dropdown-links"><a href="#">Home</a></li>
+              <li class="dropdown-links"><a href="#">About Us</a></li>
+              <li class="dropdown-links"><a href="#">Courses</a></li>
+              <li class="dropdown-links"><a href="#">Reviews</a></li>
+              <li class="dropdown-links"><a href="#">Blogs</a></li>
+              <li class="dropdown-links"><a href="#">Contact Us</a></li>
+              <li class="flex p-2 rounded-md bg-yellow-400 hover:bg-yellow-500 w-40"><a href="#"><i class="bi bi-person"></i> Login</a></li>
+            </ul>
+          </div>
     </header>
     <!-- Hero Section -->
     <main>
@@ -74,7 +87,7 @@
               </li>
             </ul>
           </div>
-          <div class="grid grid-cols-4 gap-2">
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
             <img id="grid-img" src="images/trustpilot-png.png" alt="..." />
             <img id="grid-img" src="images/capterra-png.png" alt="..." />
             <img id="grid-img" src="images/sitejabber-png.png" alt="..." />
@@ -82,7 +95,7 @@
           </div>
         </div>
         <div
-          class="flex flex-col items-start p-10 justify-center w-full sm:w-lg"
+          class="flex flex-col items-start justify-center w-full sm:w-lg"
         >
           <form>
             <div
@@ -144,7 +157,7 @@
           class="flex flex-col md:flex-row items-center sm:items-start justify-between p-5"
         >
           <div
-            class="flex flex-col px-10 w-full md:w-2xl sm:w-sm sm:justify-center sm:items-start"
+            class="flex flex-col  w-full md:w-2xl sm:w-sm sm:justify-center sm:items-start"
           >
             <h1 class="text-4xl font-bold">
               Reach New Academic Heights with Our Cheap Online Course Help USA
@@ -328,7 +341,7 @@
         <div
           class="grid grid-cols-1 md:grid-cols-2 gap-2 w-full justify-items-stretch"
         >
-          <div class="flex flex-row bg-white rounded-md p-10 h-fit w-full">
+          <div class="flex flex-col md:flex-row bg-white rounded-md p-10 h-fit w-full">
             <div class="flex flex-col w-full">
               <h1 class="text-2xl font-bold">Free Turnitin Report</h1>
               <p class="text-md">
@@ -337,12 +350,12 @@
                 for dissertation.
               </p>
             </div>
-            <div class="flex w-1/3 justify-end">
+            <div class="flex w-1/2 md:w-1/3 justify-end">
               <img class="turnitin-img" src="images/turnitin.png" alt="" />
             </div>
           </div>
 
-          <div class="flex flex-row bg-white rounded-md p-10 h-fit w-full">
+          <div class="flex flex-col md:flex-row bg-white rounded-md p-10 h-fit w-full">
             <div class="flex flex-col w-full">
               <h1 class="text-2xl font-bold">Free Turnitin Report</h1>
               <p class="text-md">
@@ -351,7 +364,7 @@
                 for dissertation.
               </p>
             </div>
-            <div class="flex w-1/3 justify-end">
+            <div class="flex w-1/2 md:w-1/3 justify-end">
               <img class="turnitin-img" src="images/turnitin.png" alt="" />
             </div>
           </div>
@@ -441,7 +454,7 @@
               class="bg-white text-black rounded-xl shadow-xl p-8 flex flex-col items-center justify-center transition-all hover:scale-105 hover:shadow-2xl"
             >
               <div
-                class="w-20 h-20 bg-gray-200 rounded-full mb-4 flex items-center justify-center"
+                class="w-40 h-40 bg-gray-200 rounded-full mb-4 flex items-center justify-center"
               >
                 <span class="text-gray-500"
                   ><img src="images/g4450_1_.svg" alt=""
@@ -460,7 +473,7 @@
               class="bg-white text-black rounded-xl shadow-xl p-8 flex flex-col items-center justify-center transition-all hover:scale-105 hover:shadow-2xl"
             >
               <div
-                class="w-20 h-20 bg-gray-200 rounded-full mb-4 flex items-center justify-center"
+                class="w-40 h-40 bg-gray-200 rounded-full mb-4 flex items-center justify-center"
               >
                 <span class="text-gray-500"
                   ><img src="images/badge 1.svg" alt=""
@@ -478,7 +491,7 @@
               class="bg-white text-black rounded-xl shadow-xl p-8 flex flex-col items-center justify-center transition-all hover:scale-105 hover:shadow-2xl"
             >
               <div
-                class="w-20 h-20 bg-gray-200 rounded-full mb-4 flex items-center justify-center"
+                class="w-40 h-40 bg-gray-200 rounded-full mb-4 flex items-center justify-center"
               >
                 <span class="text-gray-500"
                   ><img src="images/alphabet 1.svg" alt=""
@@ -496,7 +509,7 @@
               class="bg-white text-black rounded-xl shadow-xl p-8 flex flex-col items-center justify-center transition-all hover:scale-105 hover:shadow-2xl"
             >
               <div
-                class="w-20 h-20 bg-gray-200 rounded-full mb-4 flex items-center justify-center"
+                class="w-40 h-40 bg-gray-200 rounded-full mb-4 flex items-center justify-center"
               >
                 <span class="text-gray-500"
                   ><img src="images/scholarship 1.svg" alt=""
@@ -514,7 +527,7 @@
               class="bg-white text-black rounded-xl shadow-xl p-8 flex flex-col items-center justify-center transition-all hover:scale-105 hover:shadow-2xl"
             >
               <div
-                class="w-20 h-20 bg-gray-200 rounded-full mb-4 flex items-center justify-center"
+                class="w-40 h-40 bg-gray-200 rounded-full mb-4 flex items-center justify-center"
               >
                 <span class="text-gray-500"
                   ><img src="images/creative-writing 2.svg" alt=""
@@ -532,7 +545,7 @@
               class="bg-white text-black rounded-xl shadow-xl p-8 flex flex-col items-center justify-center transition-all hover:scale-105 hover:shadow-2xl"
             >
               <div
-                class="w-20 h-20 bg-gray-200 rounded-full mb-4 flex items-center justify-center"
+                class="w-40 h-40 bg-gray-200 rounded-full mb-4 flex items-center justify-center"
               >
                 <span class="text-gray-500"
                   ><img src="images/Frame.svg" alt=""
@@ -683,7 +696,7 @@
               <button
                 class="bg-green-600 text-white py-2 px-6 rounded-md hover:bg-green-500 transition"
               >
-                WhatsApp +92-321-1234567
+                <i class="bi bi-whatsapp"></i> +1(321)-1234567
               </button>
               <button
                 class="bg-yellow-500 text-gray-900 py-2 px-6 rounded-md hover:bg-yellow-400 transition font-semibold"

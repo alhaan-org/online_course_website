@@ -117,6 +117,12 @@ main {
     /* list-style-type: disc; */
     list-style: disc;
 }
+.dropdown-menu {
+    display: none;
+}
+.menu-btn {
+    display: none;
+}
 
 @media (max-width: 992px) {
     .container {
@@ -124,12 +130,49 @@ main {
         align-items: center;
         justify-content: center;
     }
-
-    .nav-ul {
+    .menu-btn {
+        display: block;
+        transition: all 0.5s;
+    }
+    .menu-btn:focus {
+        background-color: #bebebe;
+    }
+    .nav-ul, .login-btn {
         display: none;
     }
     .image1, .image2 {
         display: none;
+    }
+    .dropdown-menu {
+        position: relative;
+        display: flex;
+        
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        overflow: hidden;
+        background-color: #000000;
+        color: #ffff;
+        font-size: 2em;
+        z-index: 5;
+        max-height: 0;
+        transition: max-height 0.5s ease-in-out;
+    }
+    .toggled {
+        max-height: 500px;
+    }
+    .dropdown-menu .dropdown-list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 10px;
+        padding: 5%;
+    }
+    .dropdown-links a {
+        transition: all 0.5s;
+    }
+    .dropdown-links a:hover {
+        color: yellow;
     }
 }
 
