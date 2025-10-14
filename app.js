@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", function () {
   // Todo Code here
   const dropdownMenu = document.querySelector(".dropdown-menu");
   const btn = document.querySelector(".menu-btn");
-  const btnIcon = this.document.querySelector("i");
+  const btnIcon = document.querySelector("i");
   btn.addEventListener("click", () => {
     dropdownMenu.classList.toggle("toggled");
     if (btnIcon.classList.contains("bi-x")) {
