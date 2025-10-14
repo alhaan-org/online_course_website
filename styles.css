@@ -7,6 +7,10 @@ body {
     padding: 0;
 }
 
+main {
+    width: 100%;
+}
+
 .nav-ul {
     list-style: none;
     display: flex;
@@ -41,15 +45,15 @@ body {
     background-size: cover;
     opacity: 0.15;
     z-index: -1;
-}
+} 
 
 .container {
     position: relative;
     width: 100%;
     height: fit-content;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
     z-index: 1;
 }
 
@@ -72,7 +76,7 @@ body {
     aspect-ratio: 1 / 1;
     object-fit: contain;
     padding: 2%;
-    transform: scale(90%);
+    transform: scale(70%);
 }
 .turnitin-img {
     aspect-ratio: 18 / 9;
@@ -81,7 +85,7 @@ body {
 #form-input {
     border: none;
     outline: none;
-    width: 20rem;
+    width: fit-content;
 }
 
 #form-input:focus {
@@ -124,4 +128,29 @@ body {
     .nav-ul {
         display: none;
     }
+    .image1, .image2 {
+        display: none;
+    }
+}
+
+.image1 {
+    position: relative;
+}
+.image2 {
+    position: relative;
+}
+
+#bulb {
+    position: absolute;
+    top: -15em;
+    left: -10em;
+    transform: scale(50%);
+}
+
+#gown {
+    position: absolute;
+    bottom: -18em;
+    right: -10em;
+    transform: scale(40%);
+    z-index: 2;
 }
