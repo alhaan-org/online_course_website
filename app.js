@@ -3,6 +3,8 @@ window.addEventListener("DOMContentLoaded", function () {
   const dropdownMenu = document.querySelector(".dropdown-menu");
   const btn = document.querySelector(".menu-btn");
   const btnIcon = document.querySelector("i");
+  const dropdownLinks = document.querySelectorAll(".dropdown-links a")
+  
   btn.addEventListener("click", () => {
     dropdownMenu.classList.toggle("toggled");
     if (btnIcon.classList.contains("bi-x")) {
@@ -11,4 +13,11 @@ window.addEventListener("DOMContentLoaded", function () {
       btnIcon.classList.replace("bi-list", "bi-x");
     }
   });
+
+  dropdownLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      dropdownMenu.classList.remove("toggled")
+    })
+  })
+
 });

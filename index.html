@@ -24,7 +24,9 @@
         </div>
         <nav class="flex flex-row p-5 items-center justify-between w-full">
           <h1 class="text-5xl">LOGO</h1>
-          <button class="menu-btn flex rounded-md p-5 text-black text-5xl"><i class="bi bi-x"></i></button>
+          <button class="menu-btn flex rounded-md p-5 text-black text-5xl">
+            <i class="bi bi-x"></i>
+          </button>
           <ul class="nav-ul">
             <li class="nav-links"><a href="#">Home</a></li>
             <li class="nav-links"><a href="#">About Us</a></li>
@@ -39,20 +41,24 @@
         </nav>
       </div>
       <div class="dropdown-menu toggled">
-             <ul class="dropdown-list">
-              <li class="dropdown-links"><a href="#">Home</a></li>
-              <li class="dropdown-links"><a href="#">About Us</a></li>
-              <li class="dropdown-links"><a href="#">Courses</a></li>
-              <li class="dropdown-links"><a href="#">Reviews</a></li>
-              <li class="dropdown-links"><a href="#">Blogs</a></li>
-              <li class="dropdown-links"><a href="#">Contact Us</a></li>
-              <li class="flex p-2 rounded-md bg-yellow-400 hover:bg-yellow-500 w-40"><a href="#"><i class="bi bi-person"></i> Login</a></li>
-            </ul>
-          </div>
+        <ul class="dropdown-list">
+          <li class="dropdown-links"><a href="#">Home</a></li>
+          <li class="dropdown-links"><a href="#">About Us</a></li>
+          <li class="dropdown-links"><a href="#">Courses</a></li>
+          <li class="dropdown-links"><a href="#">Reviews</a></li>
+          <li class="dropdown-links"><a href="#">Blogs</a></li>
+          <li class="dropdown-links"><a href="#">Contact Us</a></li>
+          <li
+            class="flex p-2 rounded-md bg-yellow-400 hover:bg-yellow-500 w-40"
+          >
+            <a href="#"><i class="bi bi-person"></i> Login</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <!-- Hero Section -->
     <main>
-      <section class="container w-full p-10">
+      <section class="container-custom w-full p-10">
         <div
           class="flex flex-col p-2 items-start justify-center w-full sm:w-xl gap-4"
         >
@@ -94,9 +100,7 @@
             <img id="grid-img" src="images/reviewsio-png.png" alt="..." />
           </div>
         </div>
-        <div
-          class="flex flex-col items-start justify-center w-full sm:w-lg"
-        >
+        <div class="flex flex-col items-start justify-center w-full sm:w-lg">
           <form>
             <div
               class="flex flex-col p-10 items-start justify-center bg-amber-300 gap-3 w-fit sm:w-full rounded-md"
@@ -107,30 +111,43 @@
                 id="form-input"
                 class="bg-white text-black p-2 md:p-5 rounded-md"
               />
+
               <input
                 type="email"
                 placeholder="Full Email"
                 id="form-input"
                 class="bg-white text-black p-2 md:p-5 rounded-md"
               />
+
               <input
                 type="text"
                 placeholder="Phone / WhatsApp Number"
                 id="form-input"
                 class="bg-white text-black p-2 md:p-5 rounded-md"
               />
-              <input
-                type="text"
-                placeholder="Select Education"
-                id="form-input"
-                class="bg-white text-black p-2 md:p-5 rounded-md"
-              />
-              <input
-                type="text"
-                placeholder="Select Service"
-                id="form-input"
-                class="bg-white text-black p-2 md:p-5 rounded-md"
-              />
+
+              <select
+                id="education"
+                class="bg-white text-black p-2 md:p-5 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-400 appearance-none cursor-pointer"
+              >
+                <option selected disabled>Select Education</option>
+                <option>High School</option>
+                <option>Undergraduate</option>
+                <option>Graduate</option>
+                <option>PhD</option>
+              </select>
+
+              <select
+                id="service"
+                class="bg-white text-black p-2 md:p-5 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-400 appearance-none cursor-pointer"
+              >
+                <option selected disabled>Select Service</option>
+                <option>Course Help</option>
+                <option>Assignment Help</option>
+                <option>Exam Help</option>
+                <option>Project Assistance</option>
+              </select>
+
               <button
                 class="rounded-md p-2 bg-blue-500 hover:bg-blue-800 text-white w-30"
               >
@@ -138,6 +155,19 @@
               </button>
             </div>
           </form>
+        </div>
+        <div class="custom-shape-divider-bottom-1760704829">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"
+            ></path>
+          </svg>
         </div>
       </section>
       <!-- About Section -->
@@ -157,7 +187,7 @@
           class="flex flex-col md:flex-row items-center sm:items-start justify-between p-5"
         >
           <div
-            class="flex flex-col  w-full md:w-2xl sm:w-sm sm:justify-center sm:items-start"
+            class="flex flex-col w-full md:w-2xl sm:w-sm sm:justify-center sm:items-start"
           >
             <h1 class="text-4xl font-bold">
               Reach New Academic Heights with Our Cheap Online Course Help USA
@@ -273,34 +303,133 @@
         </div>
         <div class="flex w-full items-center justify-center p-10">
           <div
-            class="grid grid-cols-2 md:grid-cols-3 gap-2 justify-items-center"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 justify-items-center"
           >
             <div class="box shadow-xl">
               <img class="box-img" src="images/box-4.png" alt="..." />
+              <div class="box-content">
+                <p class="text-white">
+                  Our Moodle course help service is all about easy learning and
+                  fast delivery, to achieve the best scores.
+                </p>
+                <button
+                  class="rounded-md mt-2 p-2 text-white bg-gradient-to-r from-pink-700 to-purple-800 bg-[length:200%_200%] transition-all duration-300 ease-in-out hover:bg-[position:100%_0] hover:cursor-pointer"
+                >
+                  <i class="bi bi-telephone-fill"></i> Call Now
+                </button>
+              </div>
             </div>
             <div class="box shadow-xl">
               <img class="box-img" src="images/box-6.png" alt="..." />
+              <div class="box-content">
+                <p class="text-white">
+                  Our Moodle course help service is all about easy learning and
+                  fast delivery, to achieve the best scores.
+                </p>
+                <button
+                  class="rounded-md mt-2 p-2 text-white bg-gradient-to-r from-pink-700 to-purple-800 bg-[length:200%_200%] transition-all duration-300 ease-in-out hover:bg-[position:100%_0] hover:cursor-pointer"
+                >
+                  <i class="bi bi-telephone-fill"></i> Call Now
+                </button>
+              </div>
             </div>
             <div class="box shadow-xl">
               <img class="box-img" src="images/box-9.png" alt="..." />
+              <div class="box-content">
+                <p class="text-white">
+                  Our Moodle course help service is all about easy learning and
+                  fast delivery, to achieve the best scores.
+                </p>
+                <button
+                  class="rounded-md mt-2 p-2 text-white bg-gradient-to-r from-pink-700 to-purple-800 bg-[length:200%_200%] transition-all duration-300 ease-in-out hover:bg-[position:100%_0] hover:cursor-pointer"
+                >
+                  <i class="bi bi-telephone-fill"></i> Call Now
+                </button>
+              </div>
             </div>
             <div class="box shadow-xl">
               <img class="box-img" src="images/box-7.png" alt="..." />
+              <div class="box-content">
+                <p class="text-white">
+                  Our Moodle course help service is all about easy learning and
+                  fast delivery, to achieve the best scores.
+                </p>
+                <button
+                  class="rounded-md mt-2 p-2 text-white bg-gradient-to-r from-pink-700 to-purple-800 bg-[length:200%_200%] transition-all duration-300 ease-in-out hover:bg-[position:100%_0] hover:cursor-pointer"
+                >
+                  <i class="bi bi-telephone-fill"></i> Call Now
+                </button>
+              </div>
             </div>
             <div class="box shadow-xl">
               <img class="box-img" src="images/box-8.png" alt="..." />
+              <div class="box-content">
+                <p class="text-white">
+                  Our Moodle course help service is all about easy learning and
+                  fast delivery, to achieve the best scores.
+                </p>
+                <button
+                  class="rounded-md mt-2 p-2 text-white bg-gradient-to-r from-pink-700 to-purple-800 bg-[length:200%_200%] transition-all duration-300 ease-in-out hover:bg-[position:100%_0] hover:cursor-pointer"
+                >
+                  <i class="bi bi-telephone-fill"></i> Call Now
+                </button>
+              </div>
             </div>
             <div class="box shadow-xl">
               <img class="box-img" src="images/box-5.png" alt="..." />
+              <div class="box-content">
+                <p class="text-white">
+                  Our Moodle course help service is all about easy learning and
+                  fast delivery, to achieve the best scores.
+                </p>
+                <button
+                  class="rounded-md mt-2 p-2 text-white bg-gradient-to-r from-pink-700 to-purple-800 bg-[length:200%_200%] transition-all duration-300 ease-in-out hover:bg-[position:100%_0] hover:cursor-pointer"
+                >
+                  <i class="bi bi-telephone-fill"></i> Call Now
+                </button>
+              </div>
             </div>
             <div class="box shadow-xl">
               <img class="box-img" src="images/box-1.png" alt="..." />
+              <div class="box-content">
+                <p class="text-white">
+                  Our Moodle course help service is all about easy learning and
+                  fast delivery, to achieve the best scores.
+                </p>
+                <button
+                  class="rounded-md mt-2 p-2 text-white bg-gradient-to-r from-pink-700 to-purple-800 bg-[length:200%_200%] transition-all duration-300 ease-in-out hover:bg-[position:100%_0] hover:cursor-pointer"
+                >
+                  <i class="bi bi-telephone-fill"></i> Call Now
+                </button>
+              </div>
             </div>
             <div class="box shadow-xl">
               <img class="box-img" src="images/box-2.png" alt="..." />
+              <div class="box-content">
+                <p class="text-white">
+                  Our Moodle course help service is all about easy learning and
+                  fast delivery, to achieve the best scores.
+                </p>
+                <button
+                  class="rounded-md mt-2 p-2 text-white bg-gradient-to-r from-pink-700 to-purple-800 bg-[length:200%_200%] transition-all duration-300 ease-in-out hover:bg-[position:100%_0] hover:cursor-pointer"
+                >
+                  <i class="bi bi-telephone-fill"></i> Call Now
+                </button>
+              </div>
             </div>
             <div class="box shadow-xl">
               <img class="box-img" src="images/box-3.png" alt="..." />
+              <div class="box-content">
+                <p class="text-white">
+                  Our Moodle course help service is all about easy learning and
+                  fast delivery, to achieve the best scores.
+                </p>
+                <button
+                  class="rounded-md mt-2 p-2 text-white bg-gradient-to-r from-pink-700 to-purple-800 bg-[length:200%_200%] transition-all duration-300 ease-in-out hover:bg-[position:100%_0] hover:cursor-pointer"
+                >
+                  <i class="bi bi-telephone-fill"></i> Call Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -341,7 +470,9 @@
         <div
           class="grid grid-cols-1 md:grid-cols-2 gap-2 w-full justify-items-stretch"
         >
-          <div class="flex flex-col md:flex-row bg-white rounded-md p-10 h-fit w-full">
+          <div
+            class="flex flex-col md:flex-row bg-white rounded-md p-10 h-fit w-full"
+          >
             <div class="flex flex-col w-full">
               <h1 class="text-2xl font-bold">Free Turnitin Report</h1>
               <p class="text-md">
@@ -355,7 +486,9 @@
             </div>
           </div>
 
-          <div class="flex flex-col md:flex-row bg-white rounded-md p-10 h-fit w-full">
+          <div
+            class="flex flex-col md:flex-row bg-white rounded-md p-10 h-fit w-full"
+          >
             <div class="flex flex-col w-full">
               <h1 class="text-2xl font-bold">Free Turnitin Report</h1>
               <p class="text-md">
@@ -564,13 +697,12 @@
         <div class="image1">
           <img id="bulb" src="images/bulb.png" alt="" />
         </div>
-        <div class="max-w-6xl mx-auto">
-          <h2
-            class="text-3xl md:text-4xl font-extrabold text-center text-gray-800 mb-10"
-          >
-            Why Affordable Online Class Services Are Important In College?
-          </h2>
-
+        <h2
+          class="text-3xl md:text-4xl font-extrabold text-center text-gray-800 mb-10"
+        >
+          Why Affordable Online Class Services Are Important In College?
+        </h2>
+        <div class="page-content max-w-6xl mx-auto h-100">
           <div class="grid md:grid-cols-2 gap-10 text-gray-700 leading-relaxed">
             <!-- Left Column -->
             <div class="space-y-6">
@@ -612,6 +744,24 @@
                   expertise and experience to your benefit.
                 </p>
               </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                  Authentic and Reliable
+                </h3>
+                <p>
+                  You can completely rely on our experts and leverage their
+                  expertise and experience to your benefit.
+                </p>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                  Authentic and Reliable
+                </h3>
+                <p>
+                  You can completely rely on our experts and leverage their
+                  expertise and experience to your benefit.
+                </p>
+              </div>
             </div>
 
             <!-- Right Column -->
@@ -630,6 +780,54 @@
                 </p>
               </div>
 
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                  Our professional writing team will write your paper from
+                  scratch
+                </h3>
+                <p>
+                  Every single paper is unique, so our expert paper writers will
+                  approach each project with originality and adaptability. We
+                  take everything into consideration based on your expectations
+                  and ensure the best quality.
+                </p>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                  Our professional writing team will write your paper from
+                  scratch
+                </h3>
+                <p>
+                  Every single paper is unique, so our expert paper writers will
+                  approach each project with originality and adaptability. We
+                  take everything into consideration based on your expectations
+                  and ensure the best quality.
+                </p>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                  Our professional writing team will write your paper from
+                  scratch
+                </h3>
+                <p>
+                  Every single paper is unique, so our expert paper writers will
+                  approach each project with originality and adaptability. We
+                  take everything into consideration based on your expectations
+                  and ensure the best quality.
+                </p>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                  Our professional writing team will write your paper from
+                  scratch
+                </h3>
+                <p>
+                  Every single paper is unique, so our expert paper writers will
+                  approach each project with originality and adaptability. We
+                  take everything into consideration based on your expectations
+                  and ensure the best quality.
+                </p>
+              </div>
               <div>
                 <h3 class="text-lg font-semibold text-gray-900 mb-2">
                   Our professional writing team will write your paper from
@@ -942,7 +1140,7 @@
         </div>
       </section>
       <section
-        class="bg-gradient-to-r from-purple-900 to-purple-950 py-20 text-white"
+        class="bg-gradient-to-r from-purple-900 to-purple-950 py-20 text-white h-fit"
       >
         <div
           class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6"
@@ -974,12 +1172,9 @@
 
           <!-- Image Placeholder -->
           <div class="flex justify-center">
-            <div
-              class="w-80 h-80 bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-full flex items-center justify-center"
-            >
+            <div class="w-80 h-80 flex items-center justify-center">
               <img
-                class="translate-x-3"
-                width="280"
+                class="translate-x-3 translate-y-2.5 female-photo"
                 src="images/female-photo.png"
                 alt=""
               />
