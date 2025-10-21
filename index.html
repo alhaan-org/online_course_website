@@ -29,15 +29,39 @@
             <i class="bi bi-x"></i>
           </button>
           <ul class="nav-ul">
-            <li class="nav-links"><a href="#">Home</a></li>
-            <li class="nav-links"><a href="#">About Us</a></li>
-            <li class="nav-links"><a href="#">Courses</a></li>
-            <li class="nav-links"><a href="#">Reviews</a></li>
-            <li class="nav-links"><a href="#">Blogs</a></li>
-            <li class="nav-links"><a href="#">Contact Us</a></li>
+            <li
+              class="nav-links hover:bg-gradient-to-r hover:from-amber-300 hover:to-amber-500"
+            >
+              <a href="#">Home</a>
+            </li>
+            <li
+              class="nav-links hover:bg-gradient-to-r hover:from-amber-300 hover:to-amber-500"
+            >
+              <a href="#">About Us</a>
+            </li>
+            <li
+              class="nav-links hover:bg-gradient-to-r hover:from-amber-300 hover:to-amber-500"
+            >
+              <a href="#">Courses</a>
+            </li>
+            <li
+              class="nav-links hover:bg-gradient-to-r hover:from-amber-300 hover:to-amber-500"
+            >
+              <a href="#">Reviews</a>
+            </li>
+            <li
+              class="nav-links hover:bg-gradient-to-r hover:from-amber-300 hover:to-amber-500"
+            >
+              <a href="#">Blogs</a>
+            </li>
+            <li
+              class="nav-links hover:bg-gradient-to-r hover:from-amber-300 hover:to-amber-500"
+            >
+              <a href="#">Contact Us</a>
+            </li>
           </ul>
-          <div class="text-2xl text-black login-btn">
-            <a href="#"><i class="bi bi-person-fill"></i> Login</a>
+          <div class="text-md text-black login-btn">
+            <a href="#"><i class="bi bi-person"></i> Login</a>
           </div>
         </nav>
       </div>
@@ -59,13 +83,13 @@
     </header>
     <!-- Hero Section -->
     <main>
-      <section class="container-custom w-full p-10">
+      <section class="container-custom w-full px-23 py-15">
         <div
           class="flex flex-col p-2 items-start justify-center w-full sm:w-xl gap-4"
         >
           <h1 class="text-4xl sm:text-5xl font-bold">
             #1
-            <span class="bg-purple-900 text-white">Online Course Helpers</span>
+            <span class="gradient-blue text-white">Online Course Helpers</span>
             US Service
           </h1>
           <p class="text-md sm:text-xl">
@@ -102,34 +126,38 @@
           </div>
         </div>
         <div class="flex flex-col items-start justify-center w-full sm:w-lg">
+          <div class="flex absolute">
+            <img class="hidden lg:block z-10 relative -top-65 right-5" src="images/offer.png" width="160" alt="">
+            <img class="hidden lg:block z-10 relative -top-65 right-33 w-150 h-fit transform scale-50" src="images/whatsapp-number.png"  alt="">
+          </div>
           <form>
             <div
-              class="flex flex-col p-10 items-start justify-center bg-amber-300 gap-3 w-fit sm:w-full rounded-md"
+              class="flex flex-col p-10 items-start justify-center bg-gradient-to-r from-amber-300 to-amber-500 gap-3 w-fit sm:w-110 rounded-md"
             >
               <input
                 type="text"
                 placeholder="Full Name"
                 id="form-input"
-                class="bg-white text-black p-2 md:p-5 rounded-md"
+                class="bg-white text-black p-2 md:p-5 w-full"
               />
 
               <input
                 type="email"
                 placeholder="Full Email"
                 id="form-input"
-                class="bg-white text-black p-2 md:p-5 rounded-md"
+                class="bg-white text-black p-2 md:p-5 w-full"
               />
 
               <input
                 type="text"
                 placeholder="Phone / WhatsApp Number"
                 id="form-input"
-                class="bg-white text-black p-2 md:p-5 rounded-md"
+                class="bg-white text-black p-2 md:p-5 w-full"
               />
 
               <select
                 id="education"
-                class="bg-white text-black p-2 md:p-5 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-400 appearance-none cursor-pointer"
+                class="bg-white text-black p-2 md:p-5 w-full focus:outline-none focus:ring-2 focus:ring-blue-400 appearance-none cursor-pointer"
               >
                 <option selected disabled>Select Education</option>
                 <option>High School</option>
@@ -140,7 +168,7 @@
 
               <select
                 id="service"
-                class="bg-white text-black p-2 md:p-5 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-400 appearance-none cursor-pointer"
+                class="bg-white text-black p-2 md:p-5 w-full focus:outline-none focus:ring-2 focus:ring-blue-400 appearance-none cursor-pointer"
               >
                 <option selected disabled>Select Service</option>
                 <option>Course Help</option>
@@ -194,7 +222,7 @@
           </div>
         </div>
         <hr class="bg-gray-200 h-1 border-0 mt-3 w-full" />
-        <div class="flex flex-col items-center justify-center p-10">
+        <div class="flex flex-col items-center justify-center px-20 py-15">
           <h1 class="text-5xl font-bold text-center">
             Reach new Academic Heights with Our
           </h1>
@@ -206,10 +234,10 @@
         </div>
 
         <div
-          class="flex flex-col md:flex-row items-center sm:items-start justify-between p-5"
+          class="flex flex-col md:flex-row items-center sm:items-start justify-between px-25 py-6"
         >
           <div
-            class="flex flex-col w-full md:w-2xl sm:w-sm sm:justify-center sm:items-start"
+            class="flex flex-col w-full md:w-xl sm:w-sm sm:justify-center sm:items-start"
           >
             <h1 class="text-4xl font-bold">
               Reach New Academic Heights with Our Cheap Online Course Help USA
@@ -282,7 +310,7 @@
             </div>
           </div>
         </div>
-        <div class="grid md:grid-cols-4 grid-cols-2 gap-2">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 px-25">
           <div
             class="flex flex-col p-10 items-start justify-center shadow-2xl rounded-xl"
           >
@@ -312,6 +340,9 @@
       <section
         class="flex flex-col w-full justify-center h-fit p-2 bg-gray-100 p-10"
       >
+        <div class="image1">
+          <img id="bulb" src="images/bulb.png" alt="" />
+        </div>
         <div class="flex flex-col items-center justify-center p-10">
           <h1 class="text-5xl font-bold text-center">
             Expert Course Help on Every Major eLearning Platform
@@ -457,7 +488,7 @@
         </div>
         <div class="flex items-center justify-center">
           <button
-            class="rounded-md p-3 bg-black hover:bg-gray-900 hover:cursor-pointer text-white w-50"
+            class="rounded-md p-2 bg-black hover:bg-gray-900 hover:cursor-pointer text-white w-30"
           >
             Show more
           </button>
@@ -476,7 +507,7 @@
         </div>
       </section>
       <section
-        class="flex flex-col w-full justify-center items-center h-fit p-2 bg-gradient-to-t from-amber-400 to-amber-200 p-10"
+        class="flex flex-col w-full justify-center items-center h-fit p-5 bg-gradient-to-t from-amber-400 to-amber-200 p-10"
       >
         <div class="flex flex-col items-center justify-center p-10 text-white">
           <h1 class="text-5xl font-bold text-center">
@@ -490,7 +521,7 @@
 
         <!-- Turnitin Report Grid -->
         <div
-          class="grid grid-cols-1 md:grid-cols-2 gap-2 w-full justify-items-stretch"
+          class="grid grid-cols-1 sm:grid-cols-2 gap-2 w-full justify-items-stretch px-10 md:px-25"
         >
           <div
             class="flex flex-col md:flex-row bg-white rounded-md p-10 h-fit w-full"
@@ -527,10 +558,10 @@
 
         <!-- Calculus Grid -->
         <div
-          class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-2 justify-items-stretch items-center w-full"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 mt-2 justify-items-stretch items-center w-full px-10 md:px-25"
         >
           <div
-            class="group flex flex-col bg-white hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-500 hover:to-violet-900 p-5 h-fit items-center rounded-md"
+            class="group flex flex-col bg-white hover:bg-gradient-to-r hover:from-blue-800 hover:to-blue-950 p-5 h-fit items-center rounded-md"
           >
             <img src="images/calculus.svg" width="100" height="100" />
             <h1 class="text-xl font-bold group-hover:text-white">
@@ -543,7 +574,7 @@
             </p>
           </div>
           <div
-            class="group flex flex-col bg-white hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-500 hover:to-violet-900 p-5 h-fit items-center rounded-md"
+            class="group flex flex-col bg-white  hover:bg-gradient-to-r hover:from-blue-800 hover:to-blue-950 p-5 h-fit items-center rounded-md"
           >
             <img src="images/calculus.svg" width="100" height="100" />
             <h1 class="text-xl font-bold group-hover:text-white">
@@ -556,7 +587,7 @@
             </p>
           </div>
           <div
-            class="group flex flex-col bg-white hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-500 hover:to-violet-900 p-5 h-fit items-center rounded-md"
+            class="group flex flex-col bg-white hover:bg-gradient-to-r hover:from-blue-800 hover:to-blue-950 p-5 h-fit items-center rounded-md"
           >
             <img src="images/calculus.svg" width="100" height="100" />
             <h1 class="text-xl font-bold group-hover:text-white">
@@ -569,7 +600,7 @@
             </p>
           </div>
           <div
-            class="group flex flex-col bg-white hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-500 hover:to-violet-900 p-5 h-fit items-center rounded-md"
+            class="group flex flex-col bg-white hover:bg-gradient-to-r hover:from-blue-800 hover:to-blue-950 p-5 h-fit items-center rounded-md"
           >
             <img src="images/calculus.svg" width="100" height="100" />
             <h1 class="text-xl font-bold group-hover:text-white">
@@ -581,15 +612,16 @@
               for dissertation.
             </p>
           </div>
-          <button
-            class="bg-purple-900 hover:bg-gradient-to-r hover:from-purple-700 hover:via-purple-500 hover:to-violet-900 text-white py-2 px-4 rounded-md"
+          
+        </div>
+        <button
+            class="mt-5 bg-blue-900 hover:bg-gradient-to-r hover:from-blue-800 hover:to-blue-950 text-white py-3 px-5 rounded-md"
           >
             <i class="bi bi-headset"></i> Live Chat
           </button>
-        </div>
       </section>
       <section
-        class="bg-gradient-to-r from-indigo-950 to-purple-900 text-white p-10"
+        class="bg-gradient-to-r from-blue-900 to-blue-950 text-white p-10"
       >
         <div class="max-w-6xl mx-auto text-center">
           <h1 class="text-4xl md:text-5xl font-bold mb-4">
@@ -603,19 +635,21 @@
           </p>
 
           <!-- Grid -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 py-15"
+          >
             <!-- Card -->
             <div
-              class="bg-white text-black rounded-xl shadow-xl p-8 flex flex-col items-center justify-center transition-all hover:scale-105 hover:shadow-2xl"
+              class="mb-15 relative overflow-visible bg-white text-black rounded-xl h-fit shadow-xl p-8 pt-16 flex flex-col items-center justify-center transition-all hover:shadow-2xl"
             >
+              <!-- floating circle -->
               <div
-                class="w-40 h-40 bg-gray-200 rounded-full mb-4 flex items-center justify-center"
+                class="absolute -top-20 left-1/2 -translate-x-1/2 w-40 h-40 bg-gray-200 rounded-full flex items-center justify-center shadow-md z-20"
               >
-                <span class="text-gray-500"
-                  ><img src="images/g4450_1_.svg" alt=""
-                /></span>
+                <img src="images/g4450_1_.svg" alt="" class="w-20 h-20" />
               </div>
-              <h2 class="text-xl font-bold mb-2">Unlimited Revisions</h2>
+
+              <h2 class="text-xl font-bold mb-2 mt-10">Unlimited Revisions</h2>
               <p class="text-sm text-center text-gray-600">
                 We allow our clients to examine the work to ensure there are no
                 flaws or incompatibilities. To ensure a high-quality assignment
@@ -625,99 +659,103 @@
 
             <!-- Card -->
             <div
-              class="bg-white text-black rounded-xl shadow-xl p-8 flex flex-col items-center justify-center transition-all hover:scale-105 hover:shadow-2xl"
+              class="mb-15 relative overflow-visible bg-white text-black rounded-xl h-fit shadow-xl p-8 pt-16 flex flex-col items-center justify-center transition-all hover:shadow-2xl"
             >
               <div
-                class="w-40 h-40 bg-gray-200 rounded-full mb-4 flex items-center justify-center"
+                class="absolute -top-20 left-1/2 -translate-x-1/2 w-40 h-40 bg-gray-200 rounded-full flex items-center justify-center shadow-md z-20"
               >
                 <span class="text-gray-500"
                   ><img src="images/badge 1.svg" alt=""
                 /></span>
               </div>
-              <h2 class="text-xl font-bold mb-2">Qualified Course Experts</h2>
+              <h2 class="text-xl font-bold mb-2 mt-10">Qualified Course Experts</h2>
               <p class="text-sm text-center text-gray-600">
-                Our team consists of expert tutors who ensure your online
-                courses are handled with utmost professionalism and care.
+                 We allow our clients to examine the work to ensure there are no
+                flaws or incompatibilities. To ensure a high-quality assignment
+                free from all issues, we offer unlimited revisions.
               </p>
             </div>
 
             <!-- Card -->
-            <div
-              class="bg-white text-black rounded-xl shadow-xl p-8 flex flex-col items-center justify-center transition-all hover:scale-105 hover:shadow-2xl"
+           <div
+              class="mb-15 relative overflow-visible bg-white text-black rounded-xl h-fit shadow-xl p-8 pt-16 flex flex-col items-center justify-center transition-all hover:shadow-2xl"
             >
               <div
-                class="w-40 h-40 bg-gray-200 rounded-full mb-4 flex items-center justify-center"
+                class="absolute -top-20 left-1/2 -translate-x-1/2 w-40 h-40 bg-gray-200 rounded-full flex items-center justify-center shadow-md z-20"
               >
                 <span class="text-gray-500"
                   ><img src="images/alphabet 1.svg" alt=""
                 /></span>
               </div>
-              <h2 class="text-xl font-bold mb-2">Guaranteed A+ Performance</h2>
+              <h2 class="text-xl font-bold mb-2 mt-10">Guaranteed A+</h2>
               <p class="text-sm text-center text-gray-600">
-                We ensure top-tier academic performance by delivering original,
-                high-quality content that meets your educational goals.
+                 We allow our clients to examine the work to ensure there are no
+                flaws or incompatibilities. To ensure a high-quality assignment
+                free from all issues, we offer unlimited revisions.
               </p>
             </div>
 
             <!-- Card -->
-            <div
-              class="bg-white text-black rounded-xl shadow-xl p-8 flex flex-col items-center justify-center transition-all hover:scale-105 hover:shadow-2xl"
+           <div
+              class="mb-15 relative overflow-visible bg-white text-black rounded-xl h-fit shadow-xl p-8 pt-16 flex flex-col items-center justify-center transition-all hover:shadow-2xl"
             >
               <div
-                class="w-40 h-40 bg-gray-200 rounded-full mb-4 flex items-center justify-center"
+                class="absolute -top-20 left-1/2 -translate-x-1/2 w-40 h-40 bg-gray-200 rounded-full flex items-center justify-center shadow-md z-20"
               >
                 <span class="text-gray-500"
                   ><img src="images/scholarship 1.svg" alt=""
                 /></span>
               </div>
-              <h2 class="text-xl font-bold mb-2">Affordable Pricing for All</h2>
+              <h2 class="text-xl font-bold mb-2 mt-10">Affordable Pricing for All</h2>
               <p class="text-sm text-center text-gray-600">
-                Our affordable pricing ensures every student gets access to
-                quality academic help without financial stress.
+                 We allow our clients to examine the work to ensure there are no
+                flaws or incompatibilities. To ensure a high-quality assignment
+                free from all issues, we offer unlimited revisions.
               </p>
             </div>
 
             <!-- Card -->
             <div
-              class="bg-white text-black rounded-xl shadow-xl p-8 flex flex-col items-center justify-center transition-all hover:scale-105 hover:shadow-2xl"
+              class="mb-15 relative overflow-visible bg-white text-black rounded-xl max-h-fit h-fit shadow-xl p-8 pt-16 flex flex-col items-center justify-center transition-all hover:shadow-2xl"
             >
               <div
-                class="w-40 h-40 bg-gray-200 rounded-full mb-4 flex items-center justify-center"
+                class="absolute -top-20 left-1/2 -translate-x-1/2 w-40 h-40 bg-gray-200 rounded-full flex items-center justify-center shadow-md z-20"
               >
                 <span class="text-gray-500"
                   ><img src="images/creative-writing 2.svg" alt=""
                 /></span>
               </div>
-              <h2 class="text-xl font-bold mb-2">100% Unique Content</h2>
+              <h2 class="text-xl font-bold mb-2 mt-10">100% Unique Content</h2>
               <p class="text-sm text-center text-gray-600">
-                We guarantee original work created from scratch, free from
-                plagiarism, ensuring complete academic integrity.
+                We allow our clients to examine the work to ensure there are no
+                flaws or incompatibilities. To ensure a high-quality assignment
+                free from all issues, we offer unlimited revisions.
               </p>
             </div>
-
             <!-- Card -->
             <div
-              class="bg-white text-black rounded-xl shadow-xl p-8 flex flex-col items-center justify-center transition-all hover:scale-105 hover:shadow-2xl"
+              class="mb-15 relative overflow-visible bg-white text-black rounded-xl max-h-fit h-fit shadow-xl p-8 pt-16 flex flex-col items-center justify-center transition-all hover:shadow-2xl"
             >
               <div
-                class="w-40 h-40 bg-gray-200 rounded-full mb-4 flex items-center justify-center"
+                class="absolute -top-20 left-1/2 -translate-x-1/2 w-40 h-40 bg-gray-200 rounded-full flex items-center justify-center shadow-md z-20"
               >
                 <span class="text-gray-500"
                   ><img src="images/Frame.svg" alt=""
                 /></span>
               </div>
-              <h2 class="text-xl font-bold mb-2">Guaranteed A+ Performance</h2>
+              <h2 class="text-xl font-bold mb-2 mt-10">Free from Plagiarism</h2>
               <p class="text-sm text-center text-gray-600">
-                Our experts ensure consistent academic excellence with top
-                grades and reliable course completion.
+                 We allow our clients to examine the work to ensure there are no
+                flaws or incompatibilities. To ensure a high-quality assignment
+                free from all issues, we offer unlimited revisions.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section class="bg-gray-50 p-10">
-        <div class="image1">
-          <img id="bulb" src="images/bulb.png" alt="" />
+      <section class="relative before:content-[' '] before:absolute before:inset-0  before:-z-10 before:bg-[url('/images/gray-bg.png')]  p-10">
+        <div class="relative">
+          <img class="hidden sm:block absolute -top-50 -left-26 transform scale-50" src="images/book.png" alt="" />
         </div>
         <h2
           class="text-3xl md:text-4xl font-extrabold text-center text-gray-800 mb-10"
@@ -888,17 +926,14 @@
             </div>
           </div>
         </div>
-        <div class="image2">
-          <img id="gown" src="images/gown_cap.png" alt="" />
+        <div class="hidden sm:block relative">
+          <img class="absolute -bottom-25 -right-10 transform scale-x-[-1] w-40" src="images/book.png" alt="" />
         </div>
       </section>
-      <section class="bg-white py-16 px-6 md:px-20 relative">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-10">
-          <!-- Text Section -->
-          <div class="space-y-6">
-            <h1
-              class="text-3xl md:text-5xl font-bold text-gray-900"
-            >
+      <section class="bg-white py-6 relative w-full">
+        <div class="px-10 grid md:grid-cols-2 items-center">
+          <div class="space-y-3">
+            <h1 class="text-3xl md:text-5xl font-bold text-gray-900">
               Can You Do My Course With Guaranteed Top Grades? Yes, We Can.
             </h1>
             <p class="text-gray-600">
@@ -918,18 +953,12 @@
               >
                 <i class="bi bi-whatsapp"></i> +1(321)-1234567
               </button>
-              <button
-                class="bg-yellow-500 text-gray-900 py-2 px-6 rounded-md hover:bg-yellow-400 transition font-semibold"
-              >
+              <div class="bg-yellow-500 text-gray-900 py-2 px-6 font-semibold">
                 GET UPTO 57% Off!
-              </button>
+              </div>
             </div>
           </div>
-
-          <!-- Image Placeholder -->
-          <div
-            class="w-full h-fit flex items-center justify-center text-gray-500"
-          >
+          <div class="translate-x-10">
             <img
               src="images/photo-female-office-worker-sitting-desk-showing-thumbs-up-high-quality-photo 1.png"
               alt=""
@@ -939,10 +968,10 @@
       </section>
       <section class="bg-gray-100 py-16 px-6 md:px-20">
         <div class="max-w-6xl mx-auto text-center mb-10">
-          <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+          <h1 class="text-2xl md:text-4xl font-bold text-gray-900 mb-2">
             What Students Say About Our Online Course Help
-          </h2>
-          <p class="text-gray-600">
+          </h1>
+          <p class="text-gray-600 text-md">
             Real experiences. Real results. See how our students achieve success
             in their online courses.
           </p>
@@ -951,31 +980,31 @@
         <!-- Review Logos -->
         <div class="flex flex-wrap justify-center gap-6 mb-10">
           <div
-            class="flex flex-col items-center bg-white p-4 rounded-lg shadow text-center w-48"
+            class="group flex flex-col items-center bg-white p-4 rounded-lg shadow text-center w-48 hover:bg-cyan-900"
           >
             <p class="text-lg font-semibold text-blue-600">290 ★★★★★</p>
-            <p class="text-sm text-gray-700">Customer Reviews</p>
+            <p class="text-sm text-gray-700 group-hover:text-white">Customer Reviews</p>
             <img width="100" src="images/facebook-logo.png" alt="" />
           </div>
           <div
-            class="flex flex-col items-center bg-white p-4 rounded-lg shadow text-center w-48"
+            class="group flex flex-col items-center bg-white p-4 rounded-lg shadow text-center w-48 hover:bg-cyan-900"
           >
             <p class="text-lg font-semibold text-cyan-600">150 ★★★★★</p>
-            <p class="text-sm text-gray-700">Customer Reviews</p>
+            <p class="text-sm text-gray-700 group-hover:text-white">Customer Reviews</p>
             <img width="100" src="images/trustpilot.png" alt="" />
           </div>
           <div
-            class="flex flex-col items-center bg-white p-4 rounded-lg shadow text-center w-48"
+            class="group flex flex-col items-center bg-white p-4 rounded-lg shadow text-center w-48 hover:bg-cyan-900"
           >
             <p class="text-lg font-semibold text-yellow-600">150 ★★★★★</p>
-            <p class="text-sm text-gray-700">Customer Reviews</p>
+            <p class="text-sm text-gray-700 group-hover:text-white">Customer Reviews</p>
             <img width="100" src="images/google-logo.png" alt="" />
           </div>
           <div
-            class="flex flex-col items-center bg-white p-4 rounded-lg shadow text-center w-48"
+            class="group flex flex-col items-center bg-white p-4 rounded-lg shadow text-center w-48 hover:bg-cyan-900"
           >
             <p class="text-lg font-semibold text-orange-600">150 ★★★★★</p>
-            <p class="text-sm text-gray-700">Customer Reviews</p>
+            <p class="text-sm text-gray-700 group-hover:text-white">Customer Reviews</p>
             <img width="100" src="images/sitejabber-png.png" alt="" />
           </div>
         </div>
@@ -992,8 +1021,38 @@
             <!-- Item 1 -->
             <div class="hidden duration-1000 ease-in-out" data-carousel-item>
               <div
-                class="grid md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto"
+                class="grid md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto"
               >
+                <div class="bg-white p-4 rounded-lg shadow text-left">
+                  <h4 class="font-bold text-gray-900">Tax</h4>
+                  <p class="text-sm text-gray-600">★★★★★ | 270 reviews</p>
+                  <p class="text-sm text-gray-600">
+                    Over the past 20 years, we've not only embraced Best
+                    innovation but have been recognized for it, amassing an
+                    impressive collection of awards and accolades.
+                  </p>
+                  <img class="mt-2 w-6" src="images/google.png" alt="" />
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow text-left">
+                  <h4 class="font-bold text-gray-900">Tax</h4>
+                  <p class="text-sm text-gray-600">★★★★★ | 270 reviews</p>
+                  <p class="text-sm text-gray-600">
+                    Over the past 20 years, we've not only embraced Best
+                    innovation but have been recognized for it, amassing an
+                    impressive collection of awards and accolades.
+                  </p>
+                  <img class="mt-2 w-6" src="images/google.png" alt="" />
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow text-left">
+                  <h4 class="font-bold text-gray-900">Tax</h4>
+                  <p class="text-sm text-gray-600">★★★★★ | 270 reviews</p>
+                  <p class="text-sm text-gray-600">
+                    Over the past 20 years, we've not only embraced Best
+                    innovation but have been recognized for it, amassing an
+                    impressive collection of awards and accolades.
+                  </p>
+                  <img class="mt-2 w-6" src="images/google.png" alt="" />
+                </div>
                 <div class="bg-white p-4 rounded-lg shadow text-left">
                   <h4 class="font-bold text-gray-900">Tax</h4>
                   <p class="text-sm text-gray-600">★★★★★ | 270 reviews</p>
@@ -1119,10 +1178,10 @@
             <!-- Item 2 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <div
-                class="grid md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto"
+                class="grid md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto"
               >
                 <div class="bg-white p-4 rounded-lg shadow text-left">
-                  <h4 class="font-bold text-gray-900">Tax</h4>
+                  <h4 class="font-bold text-gray-900">Literature</h4>
                   <p class="text-sm text-gray-600">★★★★★ | 270 reviews</p>
                   <p class="text-sm text-gray-600">
                     Over the past 20 years, we've not only embraced Best
@@ -1241,13 +1300,73 @@
                   </p>
                   <img class="mt-2 w-6" src="images/google.png" alt="" />
                 </div>
+                <div class="bg-white p-4 rounded-lg shadow text-left">
+                  <h4 class="font-bold text-gray-900">Literature</h4>
+                  <p class="text-sm text-gray-600">★★★★★ | 190 reviews</p>
+                  <p class="text-sm text-gray-600">
+                    Over the past 20 years, we've not only embraced Best
+                    innovation but have been recognized for it, amassing an
+                    impressive collection of awards and accolades.
+                  </p>
+                  <img class="mt-2 w-6" src="images/google.png" alt="" />
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow text-left">
+                  <h4 class="font-bold text-gray-900">Literature</h4>
+                  <p class="text-sm text-gray-600">★★★★★ | 190 reviews</p>
+                  <p class="text-sm text-gray-600">
+                    Over the past 20 years, we've not only embraced Best
+                    innovation but have been recognized for it, amassing an
+                    impressive collection of awards and accolades.
+                  </p>
+                  <img class="mt-2 w-6" src="images/google.png" alt="" />
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow text-left">
+                  <h4 class="font-bold text-gray-900">Literature</h4>
+                  <p class="text-sm text-gray-600">★★★★★ | 190 reviews</p>
+                  <p class="text-sm text-gray-600">
+                    Over the past 20 years, we've not only embraced Best
+                    innovation but have been recognized for it, amassing an
+                    impressive collection of awards and accolades.
+                  </p>
+                  <img class="mt-2 w-6" src="images/google.png" alt="" />
+                </div>
               </div>
             </div>
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <div
-                class="grid md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto"
+                class="grid md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto"
               >
+                <div class="bg-white p-4 rounded-lg shadow text-left">
+                  <h4 class="font-bold text-gray-900">Tax</h4>
+                  <p class="text-sm text-gray-600">★★★★★ | 270 reviews</p>
+                  <p class="text-sm text-gray-600">
+                    Over the past 20 years, we've not only embraced Best
+                    innovation but have been recognized for it, amassing an
+                    impressive collection of awards and accolades.
+                  </p>
+                  <img class="mt-2 w-6" src="images/google.png" alt="" />
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow text-left">
+                  <h4 class="font-bold text-gray-900">Tax</h4>
+                  <p class="text-sm text-gray-600">★★★★★ | 270 reviews</p>
+                  <p class="text-sm text-gray-600">
+                    Over the past 20 years, we've not only embraced Best
+                    innovation but have been recognized for it, amassing an
+                    impressive collection of awards and accolades.
+                  </p>
+                  <img class="mt-2 w-6" src="images/google.png" alt="" />
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow text-left">
+                  <h4 class="font-bold text-gray-900">Tax</h4>
+                  <p class="text-sm text-gray-600">★★★★★ | 270 reviews</p>
+                  <p class="text-sm text-gray-600">
+                    Over the past 20 years, we've not only embraced Best
+                    innovation but have been recognized for it, amassing an
+                    impressive collection of awards and accolades.
+                  </p>
+                  <img class="mt-2 w-6" src="images/google.png" alt="" />
+                </div>
                 <div class="bg-white p-4 rounded-lg shadow text-left">
                   <h4 class="font-bold text-gray-900">Tax</h4>
                   <p class="text-sm text-gray-600">★★★★★ | 270 reviews</p>
@@ -1415,7 +1534,7 @@
             </p>
 
             <div
-              class="bg-gradient-to-r from-violet-800 via-violet-600 to-violet-900 text-white p-4 rounded-lg shadow-md shadow-yellow-500"
+              class="bg-gradient-to-r from-blue-900 to-blue-950 text-white p-4 rounded-lg shadow-md shadow-yellow-500"
             >
               <h3 class="font-semibold mb-2">
                 How do I choose the best assignment help website?
@@ -1440,7 +1559,7 @@
                 <h2 id="accordion-color-heading-1">
                   <button
                     type="button"
-                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white rounded-lg bg-gradient-to-r from-purple-700 to-purple-900 hover:opacity-90"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white rounded-lg bg-gradient-to-r from-blue-900 to-blue-950 hover:opacity-90"
                     data-accordion-target="#accordion-color-body-1"
                     aria-expanded="true"
                     aria-controls="accordion-color-body-1"
@@ -1470,13 +1589,12 @@
                   aria-labelledby="accordion-color-heading-1"
                 >
                   <div
-                    class="p-5 rounded-b-lg shadow-yellow-500/50 shadow-md **bg-white**"
+                    class="p-5 rounded-b-lg shadow-yellow-500/50 shadow-md bg-white"
                   >
-                    <p class="mb-2 **text-black**">
-                      Search for **independent reviews** and check their
-                      **plagiarism, revision, and refund policies**. A strong
-                      reputation and transparency are key indicators of a
-                      reliable service.
+                    <p class="mb-2 text-black">
+                      Search for independent reviews and check their plagiarism,
+                      revision, and refund policies. A strong reputation and
+                      transparency are key indicators of a reliable service.
                     </p>
                   </div>
                 </div>
@@ -1486,7 +1604,7 @@
                 <h2 id="accordion-color-heading-2">
                   <button
                     type="button"
-                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white rounded-lg bg-gradient-to-r from-purple-700 to-purple-900 hover:opacity-90"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white rounded-lg bg-gradient-to-r from-blue-900 to-blue-950 hover:opacity-90"
                     data-accordion-target="#accordion-color-body-2"
                     aria-expanded="false"
                     aria-controls="accordion-color-body-2"
@@ -1516,13 +1634,12 @@
                   aria-labelledby="accordion-color-heading-2"
                 >
                   <div
-                    class="p-5 rounded-b-lg shadow-yellow-500/50 shadow-md **bg-white**"
+                    class="p-5 rounded-b-lg shadow-yellow-500/50 shadow-md bg-white"
                   >
                     <p class="mb-2 **text-black**">
-                      Look for services that specify their writers' **academic
-                      levels** (e.g., Ph.D., Master's) and offer expertise in
-                      your **specific subject**. Ask for samples to judge
-                      quality.
+                      Look for services that specify their writers' academic
+                      levels (e.g., Ph.D., Master's) and offer expertise in your
+                      specific subject. Ask for samples to judge quality.
                     </p>
                   </div>
                 </div>
@@ -1532,7 +1649,7 @@
                 <h2 id="accordion-color-heading-3">
                   <button
                     type="button"
-                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white rounded-lg bg-gradient-to-r from-purple-700 to-purple-900 hover:opacity-90"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white rounded-lg bg-gradient-to-r from-blue-900 to-blue-950 hover:opacity-90"
                     data-accordion-target="#accordion-color-body-3"
                     aria-expanded="false"
                     aria-controls="accordion-color-body-3"
@@ -1562,12 +1679,56 @@
                   aria-labelledby="accordion-color-heading-3"
                 >
                   <div
-                    class="p-5 rounded-b-lg shadow-yellow-500/50 shadow-md **bg-white**"
+                    class="p-5 rounded-b-lg shadow-yellow-500/50 shadow-md bg-white"
                   >
-                    <p class="mb-2 **text-black**">
+                    <p class="mb-2 text-black">
                       They must guarantee **100% original content** and offer a
                       **free revision period** if the work doesn't meet the
                       initial requirements.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4 rounded-lg shadow-yellow-500/50 shadow-md">
+                <h2 id="accordion-color-heading-4">
+                  <button
+                    type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white rounded-lg bg-gradient-to-r from-blue-900 to-blue-950 hover:opacity-90"
+                    data-accordion-target="#accordion-color-body-4"
+                    aria-expanded="false"
+                    aria-controls="accordion-color-body-4"
+                  >
+                    <span>How do i get online course help?</span>
+                    <svg
+                      data-accordion-icon
+                      class="w-3 h-3 shrink-0"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 5 5 1 1 5"
+                      />
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="accordion-color-body-4"
+                  class="hidden"
+                  aria-labelledby="accordion-color-heading-4"
+                >
+                  <div
+                    class="p-5 rounded-b-lg shadow-yellow-500/50 shadow-md bg-white"
+                  >
+                    <p class="mb-2 text-black">
+                      They must guarantee 100% original content and offer a free
+                      revision period if the work doesn't meet the initial
+                      requirements.
                     </p>
                   </div>
                 </div>
@@ -1577,14 +1738,14 @@
         </div>
       </section>
       <section
-        class="bg-gradient-to-r from-purple-900 to-purple-950 py-20 text-white h-fit"
+        class="bg-gradient-to-r from-blue-900 to-blue-950 py-20 text-white h-fit"
       >
         <div
-          class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6"
+          class="max-w-full mx-auto grid md:grid-cols-2 items-center px-6 h-fit"
         >
           <!-- Text Side -->
           <div>
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
               Need Help with Online Course?<br />Hire Experienced Professionals
             </h2>
             <p class="text-gray-200 mb-6">

@@ -28,7 +28,6 @@ main {
 }
 
 .nav-ul .nav-links:hover {
-  background-color: yellow;
   color: black;
   cursor: pointer;
 }
@@ -63,8 +62,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40vh;
-  height: 40vh;
+  width: 60vh;
+  height: 60vh;
   padding: 5%;
   background-color: #fff;
   border-radius: 20px;
@@ -78,8 +77,8 @@ main {
 }
 
 .box-img {
-  width: 30vh;
-  height: 30vh;
+  width: 40vh;
+  height: 40vh;
   object-fit: contain;
 }
 
@@ -92,6 +91,7 @@ main {
   justify-content: center;
   text-align: center;
   padding: 1rem;
+  font-size: 1.2rem;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
 }
@@ -99,7 +99,9 @@ main {
   width: 500px;
   transform: scale(1.6);
 }
-
+.gradient-blue {
+  background: linear-gradient(rgb(2, 0, 67),rgb(5, 0, 161));
+}
 .box:hover .box-img {
   opacity: 0;
 }
@@ -115,8 +117,6 @@ main {
 #form-input {
   border: none;
   outline: none;
-  max-width: 20rem;
-  width: fit-content;
 }
 
 #form-input:focus {
@@ -164,6 +164,9 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .box-content {
+    font-size: 0.8rem;
   }
   .female-photo {
     transform: scale(1);
@@ -229,16 +232,16 @@ main {
 
 #bulb {
   position: absolute;
-  top: -15em;
+  top: -12em;
   left: -10em;
-  transform: scale(50%);
+  transform: scale(70%);
 }
 
 #gown {
   position: absolute;
-  bottom: -18em;
+  bottom: -13em;
   right: -10em;
-  transform: scale(40%);
+  transform: scale(70%);
   z-index: 2;
 }
 
