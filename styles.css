@@ -100,7 +100,7 @@ main {
   transform: scale(1.6);
 }
 .gradient-blue {
-  background: linear-gradient(rgb(2, 0, 67),rgb(5, 0, 161));
+  background: linear-gradient(rgb(2, 0, 67), rgb(5, 0, 161));
 }
 .box:hover .box-img {
   opacity: 0;
@@ -259,7 +259,6 @@ main {
   object-fit: contain;
   aspect-ratio: 16 / 9;
   width: 170px;
-  filter: grayscale(100%);
 }
 .slider-container {
   display: flex;
@@ -296,4 +295,23 @@ main {
 
 .custom-shape-divider-bottom-1760704829 .shape-fill {
   fill: #0031ff;
+}
+.custom-shape-divider-bottom-1761071747 {
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: 0; */
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1761071747 svg {
+    position: relative;
+    display: block;
+    width: calc(147% + 1.3px);
+    height: 96px;
+}
+
+.custom-shape-divider-bottom-1761071747 .shape-fill {
+    fill: #D2FF43;
 }
