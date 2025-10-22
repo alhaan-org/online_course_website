@@ -42,14 +42,13 @@ main {
   background-image: url("images/istockphoto-1152078220-612x612.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.15;
+  opacity: 0.09;
   z-index: -1;
 }
 
 .container-custom {
   display: flex;
   position: relative;
-  /* width: 100%; */
   height: fit-content;
   align-items: center;
   justify-content: space-between;
@@ -120,7 +119,6 @@ main {
 }
 
 #form-input:focus {
-  /* border: 2px solid darkcyan; */
   outline: 3px solid darkcyan;
 }
 #grid-img {
@@ -277,6 +275,7 @@ main {
   }
 }
 
+/* SVG Shape Divider CSS */
 .custom-shape-divider-bottom-1760704829 {
   position: absolute;
   bottom: 0;
@@ -297,9 +296,6 @@ main {
   fill: #0031ff;
 }
 .custom-shape-divider-bottom-1761071747 {
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* left: 0; */
     width: 100%;
     overflow: hidden;
     line-height: 0;
