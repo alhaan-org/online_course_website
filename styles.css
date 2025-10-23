@@ -51,7 +51,7 @@ main {
   position: relative;
   height: fit-content;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   z-index: 1;
 }
 
